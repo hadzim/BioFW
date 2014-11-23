@@ -10,7 +10,7 @@
  */
 #include <cmath>
 
-#include "Koolplot.h"
+#include "koolplot.h"
 
 namespace Plot {
 

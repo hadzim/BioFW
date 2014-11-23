@@ -20,7 +20,7 @@
 #include <cmath>
 #include <limits>
 
-#include "Plotdata.h" 
+#include "PlotData.h"
 #include "opencvGraphics.h"
 
 
