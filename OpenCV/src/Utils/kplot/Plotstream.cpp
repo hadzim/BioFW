@@ -101,7 +101,7 @@ static double floatRound(double val, int & sigDigits, long int &intrep)
 	   
 	// find position of dot if any
 	decPos = str.find('.');
-	if(unsigned(decPos) == std::string::npos) // then it's an integer, return now
+	if(decPos == std::string::npos) // then it's an integer, return now
 	{
 		sigDigits = str.size();
 		intrep = static_cast<long int>(val);
