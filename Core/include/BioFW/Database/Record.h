@@ -29,7 +29,7 @@ namespace BioFW {
 			bool operator <(const Record & r) const;
 			bool operator ==(const Record & r) const;
 			bool operator !=(const Record & r) const;
-		private:
+		protected:
 			SampleID sampleID;
 			BiometricID bioID;
 	};
