@@ -21,22 +21,18 @@ namespace BioFW {
 			return (int)(minDiff * (cnt-1) / s.getGlobalExtremes().getDiff());
 		}
 
-
-
 		cv::Mat renderGenuineImpostorGraph(const MethodResults & r){
-
-
 			std::vector <double> x;
 			std::vector <double> g;
 			std::vector <double> i;
 
 			Statistics::BasicStatistics statistics(r);
+			double min = statistics.getGlobalExtremes().getMin();
 
-			int cnt = 50;
 			double binSize = statistics.getGlobalExtremes().getDiff() / cnt;
 
 			for (int it = 0; it < cnt; it++){
-				x.push_back(it * binSize);
+				x.push_back(min + it * binSize);
 				g.push_back(0);
 				i.push_back(0);
 			}
