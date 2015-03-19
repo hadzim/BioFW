@@ -9,6 +9,7 @@
 #define ICOMPARISONBLOCK_H_
 #include "BioFW/Block/ITemplateExtractingBlock.h"
 #include "BioFW/Progress.h"
+#include "BioFW/Comparison/ComparisonScore.h"
 
 
 namespace BioFW {

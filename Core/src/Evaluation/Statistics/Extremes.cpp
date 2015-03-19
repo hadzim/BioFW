@@ -10,7 +10,7 @@
 namespace BioFW {
 	namespace Statistics {
 
-		Extremes::Extremes() : isInited(true), min(0.0), max(0.0) {
+		Extremes::Extremes() : isInited(false), min(0.0), max(0.0) {
 
 		}
 		Extremes::Extremes(double min, double max) : isInited(true), min(min), max(max) {
